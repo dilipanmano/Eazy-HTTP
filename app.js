@@ -40,3 +40,11 @@ eazy.put('https://jsonplaceholder.typicode.com/posts/1',data,function(err,respon
     }
 });
 
+//DELETE method
+eazy.delete('https://jsonplaceholder.typicode.com/posts/1',function(err,response){
+    if(err){
+        console.log("error "+err);
+    }else{
+        console.log(response);
+    }
+});
